@@ -40,12 +40,12 @@
               <a class="btn link" href="">Contacts</a>
             </li>
           </ul>
-        </nav> 
-        <butoon class="menu-open" type="butoon">
-          <svg class="menu-open-svg" width="32px" height="22px">
-            <use href="./images/symbol-defs.svg#icon-menu-hamburger"></use>
+        </nav>
+        <button type="button" class="menu-open">
+          <svg class="menu-open-svg" width="32" height="22">
+            <use href="./images/symbol-defs.svg#menu-burger"></use>            
           </svg>
-        </butoon>       
+        </button>       
         <address class="header-address">
           <ul class="header-link list">
             <li class="address-item">
@@ -64,7 +64,7 @@
     </header>
     <main>
       <!-- section#1 -->
-      <!-- <section class="section-hero">
+      <section class="section-hero">
         <div class="container hero-container">
           <h1 class="section-hero-heading">
             Effective Solutions for Your Business
@@ -73,9 +73,9 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- section#2 -->
-        <!-- <section class="section-two "> 
+        <section class="section-two ">
         <div class=" section-two-container container">
           <h2 class="main shadow" hidden>section#2</h2>
           <ul class="section-two-list list">
@@ -129,10 +129,10 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section>
       <!-- section#3 -->
-      <!-- <section class="section-three">
-        <div class="container">
+      <section class="section-three">
+        <div class="container section-three-div">
           <h2 class="section-three-head">What Are We Doing</h2>
           <ul class="section-three-list list">
             <li class="section-three-item">
@@ -161,14 +161,15 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- section#4 -->
-      <!-- <section class="section-four">
-        <div class="container">
+     <section class="section-four">
+        <div class="container-section-four">
           <h2 class="section-four-head">Our Team</h2>
           <ul class="section-four-list list">
             <li class="section-four-item">
               <img
+              class="section-four-img"
                 src="./images/team1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -217,6 +218,7 @@
             </li>
             <li class="section-four-item">
               <img
+              class="section-four-img"
                 src="./images/team2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -265,6 +267,7 @@
             </li>
             <li class="section-four-item">
               <img
+              class="section-four-img"
                 src="./images/team3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -313,6 +316,7 @@
             </li>
             <li class="section-four-item">
               <img
+              class="section-four-img"
                 src="./images/team4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -361,9 +365,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
       <!-- section#5 -->
-      <!-- <section class="section-five">
+      <section class="section-five">
         <div class="container">
           <h2 class="head-section-five">Customers</h2>
           <ul class="section-five-list link list">
@@ -411,13 +415,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="section-footer">
-      <div class="container">
+    <footer class="section-footer">
+      <div class="container-footer">
         <ul class="link list footer-list">
           <li class="footer-item">
-            <a href="./index.html" class="logo link"
+            <a href="./index.html" class="logo link logo-link-studio"
               >Web<span class="logo-studio-footer">Studio</span></a
             >
             <p class="section-footer-text">
@@ -458,7 +462,7 @@
               </li>
             </ul>
           </li>        
-        <form class="footer-form">
+        <form class="footer-form footer-item">
           <p class="footer-head">Subscribe</p> 
           <div class="footer-div">         
           <input class="footer-input" type="email" name="user-email" placeholder="Email" required>
@@ -471,7 +475,7 @@
         </form>
       </ul>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden"data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>

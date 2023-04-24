@@ -247,18 +247,15 @@ img {
 
 /* *!------- section#2 ------------*/
 
-
 .section-two {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-
 .section-two-list {
     display: flex;
     gap: 24px;
 }
-
 
 .icon-section-two {
     display: flex;
@@ -276,7 +273,6 @@ img {
     height: 64px;
 }
 
-
 .section-two-head {
     font-weight: 500;
     font-size: 20px;
@@ -286,7 +282,6 @@ img {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-
 
 .section-two-text {
     line-height: 1.5;
