@@ -143,9 +143,7 @@ img {
 .mob-menu-close {
     fill: #2E2F42
 }
-.mob-menu-button {
-    
-}
+
 
 
 .mob-menu.is-hidden {
@@ -172,8 +170,7 @@ color: #2E2F42;
   color: #404BBF;
 }
 
-.mob-menu-address {
-}
+
 
 .mob-menu-link {
     margin-bottom: 48px;
@@ -662,15 +659,10 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     row-gap: 64px;
     flex-direction: column;
     align-items: center;
-}
+}}
 
-.section-four-item {
-    /* width: 264px;
-    height: 428px;
-    margin: auto; */
 
-}
-}
+
 
 /**!------- 768 ------------*/
 
@@ -789,12 +781,22 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
-.footer-item:not(:last-child) {
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.footer-item{
     margin-bottom: 72px;
 }
+
+
 
 .logo-link-studio {
     margin-right: 0;
@@ -916,8 +918,29 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 }
 
 .footer-list {
+    display: flex;      
+}
+
+
+
+.footer-item {
     display: flex;
-    gap: 120px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.footer-item:not(:first-child){
+    margin-left: 120px;
+}
+
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;  
+    margin-left: 80px;
 }
 
 .icon-list-footer {   
@@ -962,8 +985,7 @@ outline: none;
 border: 1px solid #4D5AE5;
 }
 
-.footer-input::placeholder{   
-}
+
 
 .footer-button {  
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1003,10 +1025,29 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;  
+    width: 396px;  
     background-color: #FCFCFC;
     border-radius: 4px;
      padding: 72px 24px 24px ;
+}
+
+@media screen and (min-width:428px) {}
+ 
+
+/**!------- 768 ------------*/
+
+@media screen and (min-width:768px) {
+    .modal{
+        width: 408px;}
+}
+
+/**!------- 1158------------*/
+
+@media screen and (min-width:1158px) {
+
+   
+    
+    
 }
 
 
