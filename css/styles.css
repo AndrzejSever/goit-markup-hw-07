@@ -54,7 +54,7 @@ img {
 /**!------- 768 ------------*/
 @media screen and (min-width:768px) {
     .container {
-        width: 736px;
+        width: 768px;
     }
 }
 
@@ -170,25 +170,25 @@ color: #2E2F42;
   color: #404BBF;
 }
 
+.mob-menu-address{
+font-style: normal;
+}
 
-
-.mob-menu-link {
+.mob-menu-link { 
+     
     margin-bottom: 48px;
 }
 
-.mob-menu-btn-mail{
-    font-weight: 700;
+.mob-menu-btn-link {
+font-weight: 700;
 font-size: 25px;
 line-height: 1.11;
 letter-spacing: 0.02em;
-color: #4D5AE5;
+color: #4D5AE5; 
 }
 
-.mob-menu-address-item {
-    margin-bottom: 40px;
-}
 
-.mob-menu-btn-link {
+.mob-menu-btn-mail{ 
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -196,20 +196,27 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
+.mob-menu-address-item {
+    margin-bottom: 40px;
+}
+
+
 .mob-menu-icon-list{
     display: flex;
     gap: 35px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 /**!------- 428 ------------*/
 
 @media screen and (min-width:428px){
-    .mob-menu-btn-mail{
+    .mob-menu-btn-link{        
         font-size: 36px;
     }
+
     .mob-menu-icon-list{
         gap: 56px;
+        font-size: 36px;
     }
     } 
 
@@ -255,18 +262,20 @@ color: #434455;
 
     .btn-header-studio::after {
         content: '';
-        bottom: -24px;
+        bottom: -32px;
         width: 100%;
         height: 4px;
         background-color: #404BBF;
         border-radius: 2px;
         display: block;
         position: absolute;
-    }
+    }    
 
     .btn-link {
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+        font-weight: 400;
+font-size: 12px;
+line-height: 1.17;        
+        letter-spacing: 0.04em;
         color: #434455;
     }
 
@@ -293,12 +302,20 @@ color: #434455;
         color: #404BBF;
     }
 
+    .btn-header-studio::after {
+        bottom: -24px;
+    }
+
     .header-link {
         display: flex;
         align-items: center;
     }
 
-    .btn-link {
+    .btn-link {  
+    font-size: 16px;
+    line-height: 1.5;        
+        letter-spacing: 0.02em;
+        color: #434455;    
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -323,6 +340,8 @@ color: #434455;
     background-position: center;
     background-size: cover;
     padding: 112px 0;
+    max-width: 428px;
+    margin: 0 auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width:767px) ,
@@ -375,7 +394,7 @@ screen and (min-resolution: 2dppx) and (max-width:767px) {
 
 /**!------- 428 ------------*/
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:428px) {
     .section-hero-heading {
         width: 320px;
     }
@@ -388,8 +407,8 @@ screen and (min-resolution: 2dppx) and (max-width:767px) {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero/bg-hero-tab1x.jpg);
-        padding-top: 188px;
-        padding-bottom: 188px;
+            max-width: 768px;
+      
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width:768px) ,
@@ -414,7 +433,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 @media screen and (min-width:1158px) {
     .section-hero {
         max-width: 1440px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         background-color: #2E2F42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -422,6 +441,8 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width:1158px) ,
@@ -458,6 +479,14 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     display: none;
 }
 
+.section-two-text{
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+}
+
 .section-two-head {
     display: flex;
     justify-content: center;
@@ -487,8 +516,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
     .section-two-item {
         flex-basis: calc((100% - 24px) / 2);
-        width: 356px;
-        height: 120px;
+        width: 356px;        
     }
 
     .section-two-head {
@@ -744,6 +772,9 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     .section-five-list {    
         column-gap: 24px;   
     }
+
+    .section-five-link {    
+        width: 168px;}
 }
 
 /**!------- 1158------------*/
@@ -760,7 +791,6 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 }
 
 .section-five-link {    
-    width: 168px;    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -791,12 +821,9 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     align-items: center;    
 }
 
-
 .footer-item{
     margin-bottom: 72px;
 }
-
-
 
 .logo-link-studio {
     margin-right: 0;
@@ -824,10 +851,11 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 .icon-list-footer {
     display: flex;
     gap: 16px;
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 .footer-div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -835,7 +863,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 }
 
 .footer-input {
-    Width: 320px;
+    width: 100%;
     height: 40px;
     padding: 8px 16px;
     border: 1px solid #FFFFFF;
@@ -866,8 +894,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
-    margin-bottom: 16px;
+    color: #FFFFFF;   
     font-weight: 500;
 }
 
@@ -907,7 +934,15 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
 /**!------- 768 ------------*/
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+    .footer-input {
+        width:264px;          
+    }
+    
+    .footer-item{
+        margin-bottom: 0;
+    }
+}
 
 /**!------- 1158------------*/
 
@@ -975,7 +1010,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 }
 
 .footer-input {
-    Width:264px;   
+    width:264px;   
 
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

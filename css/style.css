@@ -268,10 +268,7 @@ img {
     align-items: center;
 }
 
-.section-two-svg {
-    width: 64px;
-    height: 64px;
-}
+
 
 .section-two-head {
     font-weight: 500;
@@ -279,15 +276,11 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: 8px 0;
+ 
 }
 
-.section-two-text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
+
 
 
 /* *!------- section#3 ------------*/
